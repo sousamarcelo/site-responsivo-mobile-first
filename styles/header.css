@@ -1,6 +1,6 @@
 .cabeçalho__menu-amburguer{
-    width: 48px;
-    height: 48px;
+    width: 24px;
+    height: 24px;
     background-image: url("../img/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;                                                                         /* position relative libera o posicionamento mais preciso com left, botton, top, nesse exemplo esse elemnto pai veio como padrão que é estatic e foi utilizado o relative para tirar isso */
 }
 
 .container{
@@ -21,4 +22,14 @@
 
 .container__imagem{
     padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;                                                                         /* utilizando absolute e combinado com o elemento pai que está relative é possivel preencher e centralizar o elemento por cima de outro*/
+    top: 100%;                                                                                  /* a lista ficara loga abaixo do logo menu esse recurso top 100% só possivel por que o absoluta a cima está setado*/
+}
+
+.container__botao:checked~.lista-menu {                                                         /* controlando lista atraves do checkbox marcado ou não, o elemento "~" é um conbinador CSS, e o "checked" é uma pseudo classe */
+    display: block;
 }

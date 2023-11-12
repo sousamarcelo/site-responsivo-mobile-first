@@ -28,8 +28,27 @@
     display: none;
     position: absolute;                                                                         /* utilizando absolute e combinado com o elemento pai que está relative é possivel preencher e centralizar o elemento por cima de outro*/
     top: 100%;                                                                                  /* a lista ficara loga abaixo do logo menu esse recurso top 100% só possivel por que o absoluta a cima está setado*/
+    width: 60vw;                                                                                /* a media vw = viewport-width, ou seja relativo ao dispositivo */                                                                                
 }
 
 .container__botao:checked~.lista-menu {                                                         /* controlando lista atraves do checkbox marcado ou não, o elemento "~" é um conbinador CSS, e o "checked" é uma pseudo classe */
     display: block;
+}
+
+.lista-menu__titulo, 
+.lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+}
+
+.lista-menu__link{
+    background: var(--azul-degrade);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;                                                                  /* transformando para maiuscula */
 }

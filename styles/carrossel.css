@@ -18,5 +18,57 @@
 
 .swiper-pagination{
     position: initial;
-    margin: 0.5em 0;
+    margin: 0.5em 0;  /* com dois parametros o primeiro é topo e baixo e o segundo parametro é direita e esquerda */
+}
+
+.card__descrição{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.card__botões{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botões{
+    display: flex;
+}
+
+.card{
+    background-color: var(--branco);        
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.descrição__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.botões_itens{
+    margin: 0 0.5em;
+}
+
+.botões__ancora{
+    background-color: var(--laranja);
+    padding: 1em 2.2em;
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.descrição__titulo-livro{
+    color: var(--azul);
+    font-weight: 700;
+    font-size: 18px;   
+    margin: 0.5em 0; 
+}
+
+.descrição__texto{
+    font-size: 14px;
+    font-weight: 400;
 }

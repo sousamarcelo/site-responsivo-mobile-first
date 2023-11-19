@@ -104,4 +104,14 @@
     display: none;
    }
 
+   /* so checbox estiver marcado display de opções aparecera */
+   .opçoes__botao:checked~.lista-menu{
+        display: block;
+        width: auto;
+   }
+
+   .opçoes__botao{
+    display: none;
+   }
+
 }

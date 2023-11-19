@@ -57,3 +57,51 @@
 .container__botao{
     display: none;
 }
+
+.container__titulo{
+    display: none;                                                                              /* configurado para esse titulo não aparecer no mobile pois ele é do tablet*/
+}
+
+.opçoes{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+   .container__titulo, .container__titulo--negrito{
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+   }
+
+   .container__titulo{
+    font-weight: 400;
+    display: block;                                                                             /* configurado para aparecer o titulo no tablet */
+   }
+
+   .container__titulo--negrito{
+        font-weight: 700;
+   }
+
+   .opçoes{
+        display: flex;
+   }
+
+   .opçoes__item{
+    padding: 0 1em;
+    text-transform: uppercase;
+   }
+
+   .opçoes__link{
+    text-decoration: none;
+    color: var(--preto);
+   }
+
+   .container__imagem-transparente{
+    display: none;
+   }
+
+   .cabeçalho__menu-amburguer{
+    display: none;
+   }
+
+}

@@ -34,3 +34,28 @@
     background: url("../img/Email.svg") no-repeat;                                              /* colocando icone do email dentro da barra de pesquisa antes do texto auxiliar */
     padding-left: 2em;                                                                          /* espaço entre o icone o texto auxiliar dentro ad barra de pesquisa */
 }
+
+@media screen and (min-width: 1024px) {
+    .contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contato__email{
+        width: 30%;
+    }
+
+    .contato__descricao{
+        margin-right: 1em;
+    }
+
+    .contato__descricao{
+        font-size: 24px;
+        width: 30%;
+    }
+
+    .contato__titulo{
+        font-size: 24px;
+    }
+}

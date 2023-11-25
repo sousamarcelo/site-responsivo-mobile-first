@@ -70,6 +70,18 @@
     display: none;
 }
 
+/* utilizando combinadores CSS, no combinador ">" procura uma elemento filho no caso o elemento "cabeçalho__menu-amburguer" 
+* quando o imput está com checked será procurado o rotulo e dentro prorurará o menu-amburgue trocando a cor de fundo
+*/
+
+.container__botao:checked~.container__rotulo>.cabeçalho__menu-amburguer {
+    background-image: url("../img/MenuAberto.svg");
+}
+
+.container__botao:checked~.container__rotulo{
+    background: var(--azul-degrade);
+}
+
 @media screen and (min-width: 1024px) {
 
    .container__titulo, .container__titulo--negrito{
@@ -108,7 +120,7 @@
     display: none;
    }
 
-   /* so checbox estiver marcado display de opções aparecera */
+   /* so checbox estiver marcado display de opções aparecera */   
    .opçoes__botao:checked~.lista-menu{
         display: block;
         width: auto;
@@ -116,6 +128,24 @@
 
    .opçoes__botao{
     display: none;
+   }
+
+   .opçoes__botao:checked~.opçoes__rotulo>.opçoes__item{
+        background: var(--azul-degrade);
+        color: var(--branco);
+   }
+
+   .opçoes__item{
+        padding: 2em 1em;
+   }
+
+   .lista-menu__item:hover{
+    background: var(--azul-degrade);
+   }
+
+   .lista-menu__item:hover > .lista-menu__link{
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
    }
 
 }
